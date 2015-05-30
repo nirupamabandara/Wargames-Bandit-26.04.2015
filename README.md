@@ -18,109 +18,108 @@ Host : bandit.labs.overthewire.org
 
 level 0 :
 username: bandit0
+
 password: bandit0
+
 logged to level0
+
 Level 1 Hint: password for the level1 is stored in a file called readme.
+
 list the files : ls
+
 Open the readme file: cat readme
+
 password : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
 copy text from putty shell= ctrl + insert
+
 paste text from putty shell= shif +insert
+
 Level 2 Hint: password for level2 is stored in a file called - located in the home directory
+
 list the files: ls
+
 output: -
 command to open a file named -: cat ./-
+
 password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
 Accessed level2
+
 Level 3 Hint: Password for the level3 is stored in a file called "spaces in this filename"
+
 challenge: Reading a file with spaces in its name
+
 commands: ls
+
 output: spaces in this filename
+
 command: cat "spaces in this filename"
+
 password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
 Level 4 Hint: password for the level4 is stored in hidden file in the inhere directory
+
 list the files: ls
+
 output: inhere
+
 go to inhere directory: cd inhere
+
 view hidden files: ls -la
+
 open a hidden file : cat .hidden
+
 bandit3@melinda:~$ ls
+
 inhere
+
 bandit3@melinda:~$ cd inhere
+
 bandit3@melinda:~/inhere$ ls
+
 bandit3@melinda:~/inhere$ ls -la
+
 total 12
+
 drwxr-xr-x 2 root root 4096 Nov 14 2014 .
+
 drwxr-xr-x 3 root root 4096 Nov 14 2014 ..
+
 -rw-r----- 1 bandit4 bandit3 33 Nov 14 2014 .hidden
+
 bandit3@melinda:~/inhere$ cat .hidden
+
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
-bandit3@melinda:~/inhere$ ^C
+
+
 password level4:
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
 Accessed level 4
+
 Level 5 Hint: password is stored in the only human readable file stored in the inhere directory.
 bandit4@melinda:~$ ls
 inhere
 bandit4@melinda:~$ cd inhere
 bandit4@melinda:~/inhere$ ls -al
-total 48
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file00
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file01
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file02
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file03
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file04
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file05
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file06
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file07
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file08
--rw-r----- 1 bandit5 bandit4 33 Nov 14 2014 -file09
-drwxr-xr-x 2 root root 4096 Nov 14 2014 .
-drwxr-xr-x 3 root root 4096 Nov 14 2014 ..
-bandit4@melinda:~/inhere$ file ./-*
-./-file00: data
-./-file01: data
-./-file02: data
-./-file03: data
-./-file04: data
-./-file05: data
-./-file06: data
-./-file07: ASCII text
-./-file08: data
-./-file09: data
+
 bandit4@melinda:~/inhere$ cat ./-file07
+
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
 bandit4@melinda:~/inhere$ ^C
+
 password level5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
 Host : bandit5.labs.overthewire.org
+
 Level6 Hint: password is included in a file stored in the inhere directory, it is in human readable format, size of 1033 bytes and non executable
 bandit5@melinda:~$ ls
 inhere
 bandit5@melinda:~$ cd inhere
 bandit5@melinda:~/inhere$ ls -la
-total 88
-drwxr-x--- 22 root bandit5 4096 Nov 14 2014 .
-drwxr-xr-x 3 root root 4096 Nov 14 2014 ..
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere00
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere01
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere02
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere03
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere04
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere05
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere06
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere07
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere08
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere09
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere10
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere11
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere12
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere13
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere14
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere15
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere16
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere17
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere18
-drwxr-x--- 2 root bandit5 4096 Nov 14 2014 maybehere19
+
 bandit5@melinda:~/inhere$ find ./ -size 1033c
 ./maybehere07/.file2
 bandit5@melinda:~/inhere$ cat ./maybehere07/.file2
@@ -153,36 +152,7 @@ bandit10@melissa:~$ base64 -d data.txt
 password level 11: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 Level 11 Hint : The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 Host : bandit11.labs.overthewire.org
-command: bandit11@melissa:~$ ls
-data.txt
-bandit11@melissa:~$ cat data.txt | tr a-zA-Z n-za-mN-ZA-M
-password level 12: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
-Level 12 Hint : The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
-Host : bandit12.labs.overthewire.org
-commands: bandit12@melissa:~$ ls
-data.txt
-bandit12@melissa:~$ file data.txt
-data.txt: ASCII text bandit12@melissa:~$ mkdir /tmp/stw
-bandit12@melissa:~$ cd /tmp/stw
-bandit12@melissa:/tmp/stw$ xxd -r ~/data.txt > data.txt
-bandit12@melissa:/tmp/stw$ file data.txt
-data.txt: gzip compressed data, was "data2.bin", from Unix, last modified: Thu May 10 23:52:05 2012, max compression
-bandit12@melissa:/tmp/stw$ zcat data.txt > dataNew bandit12@melissa:/tmp/stw$ ls dataNew data.txt bandit12@melissa:/tmp/stw$ file dataNew dataNew: bzip2 compressed data, block size = 900k bandit12@melissa:/tmp/stw$ bzip2 -d dataNew bzip2: Can't guess original name for dataNew -- using dataNew.out bandit12@melissa:/tmp/stw$ ls dataNew.out data.txt bandit12@melissa:/tmp/stw$ file dataNew.out dataNew.out: gzip compressed data, was "data4.bin", from Unix, last modified: Thu May 10 23:52:05 2012, max compression
-bandit12@melissa:/tmp/stw$ zcat dataNew.out > evenNewer bandit12@melissa:/tmp/stw$ ls dataNew.out data.txt evenNewer bandit12@melissa:/tmp/stw$ file evenNewer evenNewer: POSIX tar archive (GNU) bandit12@melissa:/tmp/stw$ tar -xvf evenNewer data5.bin bandit12@melissa:/tmp/stw$ file data5.bin data5.bin: POSIX tar archive (GNU)
-bandit12@melissa:/tmp/stw$ tar -xvf data5.bin data6.bin bandit12@melissa:/tmp/stw$ file data6.bin data6.bin: bzip2 compressed data, block size = 900k bandit12@melissa:/tmp/stw$ bzip2 -d data6.bin bzip2: Can't guess original name for data6.bin -- using data6.bin.out
-bandit12@melissa:/tmp/stw$ ls
-data5.bin data6.bin.out dataNew.out data.txt evenNewer
-bandit12@melissa:/tmp/stw$ file data6.bin.out
-data6.bin.out: POSIX tar archive (GNU)
-bandit12@melissa:/tmp/stw$ tar -xvf data6.bin.out
-data8.bin
-bandit12@melissa:/tmp/stw$ file data8.bin
-data8.bin: gzip compressed data, was "data9.bin", from Unix, last modified: Thu May 10 23:52:05 2012, max compression
-bandit12@melissa:/tmp/stw$ zcat data8.bin > lost
-bandit12@melissa:/tmp/stw$ ls
-data5.bin data6.bin.out data8.bin dataNew.out data.txt evenNewer lost
-bandit12@melissa:/tmp/stw$ file lost
-lost: ASCII English text
+
 bandit12@melissa:/tmp/stw$ cat lost
 The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</str
 Password level 13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
