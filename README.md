@@ -99,12 +99,7 @@ pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 Accessed level 4
 
 Level 5 Hint: password is stored in the only human readable file stored in the inhere directory.
-bandit4@melinda:~$ ls
-inhere
-bandit4@melinda:~$ cd inhere
-bandit4@melinda:~/inhere$ ls -al
 
-bandit4@melinda:~/inhere$ cat ./-file07
 
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
@@ -115,24 +110,25 @@ password level5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 Host : bandit5.labs.overthewire.org
 
 Level6 Hint: password is included in a file stored in the inhere directory, it is in human readable format, size of 1033 bytes and non executable
-bandit5@melinda:~$ ls
-inhere
-bandit5@melinda:~$ cd inhere
-bandit5@melinda:~/inhere$ ls -la
 
-bandit5@melinda:~/inhere$ find ./ -size 1033c
-./maybehere07/.file2
-bandit5@melinda:~/inhere$ cat ./maybehere07/.file2
-DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 password level6 : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
 Level 6 Hint: stored somewhere in the server and has following properties owned by user bandit7, owned by group bandit6 and 33bytes in size
+
 Host : bandit6.labs.overthewire.org
+
 commands: find / -user bandit7 -group bandit6 -size 33
+
 command : cat /var/lib/dpkg/info/bandit7.password
+
 Password level7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
 Level 7 Hint : password for level 8 is stored in the file called data.txt next to the word millionth
+
 command : cat data.txt | grep millionth
+
 Host : bandit7.labs.overthewire.org
+
 password level8: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 Level 8 Hint: The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 Host : bandit8.labs.overthewire.org
