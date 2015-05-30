@@ -1,13 +1,21 @@
 # Wargames-Bandit-26.04.2015
 Bandit exercice
 Nirupama Bandara- MS13961718
+
 Exercise : Learning Security Concepts through Games offered by the OvertheWire Community
+
 URL: http://overthewire.org/wargames/
+
 Wargames
+
 Wargame in hacking is a security challenge in which one must exploit a vulnerability in a system or application or gain access to a computer system.
+
 Bandit Level 0: Log into game using SSH
+
 Open a SSH connection with bandit.labs.overthewire.org using putty
+
 Host : bandit.labs.overthewire.org
+
 level 0 :
 username: bandit0
 password: bandit0
